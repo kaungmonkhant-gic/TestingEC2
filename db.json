@@ -1,0 +1,250 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "studentId": "S1001",
+      "grade": "10th"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "studentId": "S1002",
+      "grade": "11th"
+    },
+    {
+      "id": 3,
+      "name": "Michael Johnson",
+      "email": "michael.j@example.com",
+      "studentId": "S1003",
+      "grade": "12th"
+    },
+    {
+      "id": 4,
+      "name": "Emily Davis",
+      "email": "emily.d@example.com",
+      "studentId": "S1004",
+      "grade": "10th"
+    },
+    {
+      "id": 5,
+      "name": "Robert Wilson",
+      "email": "robert.w@example.com",
+      "studentId": "S1005",
+      "grade": "11th"
+    }
+  ],
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Dr. Sarah Johnson",
+      "email": "sarah.johnson@example.com",
+      "teacherId": "T1001",
+      "department": "Science"
+    },
+    {
+      "id": 2,
+      "name": "Prof. James Smith",
+      "email": "james.smith@example.com",
+      "teacherId": "T1002",
+      "department": "Mathematics"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Emily Brown",
+      "email": "emily.brown@example.com",
+      "teacherId": "T1003",
+      "department": "English"
+    }
+  ],
+  "subjects": [
+    {
+      "id": 1,
+      "code": "MATH101",
+      "name": "Mathematics",
+      "department": "Science",
+      "description": "Basic mathematics course covering algebra, geometry, and calculus fundamentals."
+    },
+    {
+      "id": 2,
+      "code": "PHYS102",
+      "name": "Physics",
+      "department": "Science",
+      "description": "Introduction to physics principles including mechanics, thermodynamics, and electromagnetism."
+    },
+    {
+      "id": 3,
+      "code": "CHEM103",
+      "name": "Chemistry",
+      "department": "Science",
+      "description": "Study of matter, its properties, and the changes it undergoes."
+    },
+    {
+      "id": 4,
+      "code": "ENG201",
+      "name": "English Literature",
+      "department": "Humanities",
+      "description": "Analysis of literary works and development of critical writing skills."
+    },
+    {
+      "id": 5,
+      "code": "HIST202",
+      "name": "History",
+      "department": "Humanities",
+      "description": "Survey of world history from ancient civilizations to modern times."
+    }
+  ],
+  "exams": [
+    {
+      "id": 1,
+      "title": "Mathematics Mid-term",
+      "subject": "Mathematics",
+      "subjectId": 1,
+      "teacherId": 2,
+      "duration": 60,
+      "totalMarks": 100,
+      "status": "published",
+      "date": "2023-05-15T10:00:00",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Solve for x: 2x + 5 = 15",
+          "type": "short-answer",
+          "marks": 5
+        },
+        {
+          "id": 2,
+          "text": "What is the derivative of f(x) = x²?",
+          "type": "short-answer",
+          "marks": 5
+        },
+        {
+          "id": 3,
+          "text": "Integrate ∫x³ dx",
+          "type": "short-answer",
+          "marks": 10
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Physics Final",
+      "subject": "Physics",
+      "subjectId": 2,
+      "teacherId": 1,
+      "duration": 120,
+      "totalMarks": 100,
+      "status": "draft",
+      "date": "2023-06-10T14:00:00",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Explain Newton's First Law of Motion",
+          "type": "essay",
+          "marks": 15
+        },
+        {
+          "id": 2,
+          "text": "Calculate the force required to accelerate a 2kg mass at 5m/s²",
+          "type": "short-answer",
+          "marks": 10
+        },
+        {
+          "id": 3,
+          "text": "Describe the principle of conservation of energy",
+          "type": "essay",
+          "marks": 15
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Chemistry Quiz",
+      "subject": "Chemistry",
+      "subjectId": 3,
+      "teacherId": 1,
+      "duration": 30,
+      "totalMarks": 50,
+      "status": "published",
+      "date": "2023-05-05T09:00:00",
+      "questions": [
+        {
+          "id": 1,
+          "text": "What is the chemical formula for water?",
+          "type": "short-answer",
+          "marks": 5
+        },
+        {
+          "id": 2,
+          "text": "Define pH scale",
+          "type": "short-answer",
+          "marks": 5
+        },
+        {
+          "id": 3,
+          "text": "Explain the process of electrolysis",
+          "type": "essay",
+          "marks": 10
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": 1,
+      "examId": 1,
+      "studentId": 1,
+      "score": 85,
+      "totalMarks": 100,
+      "grade": "A",
+      "feedback": "Excellent work on calculus problems. Need improvement in algebra section.",
+      "submittedAt": "2023-04-15T11:30:00",
+      "answers": [
+        {
+          "questionId": 1,
+          "answer": "x = 5",
+          "score": 5
+        },
+        {
+          "questionId": 2,
+          "answer": "f'(x) = 2x",
+          "score": 5
+        },
+        {
+          "questionId": 3,
+          "answer": "∫x³ dx = x⁴/4 + C",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "examId": 3,
+      "studentId": 2,
+      "score": 90,
+      "totalMarks": 50,
+      "grade": "A+",
+      "feedback": "Outstanding lab report. Excellent analysis and conclusions.",
+      "submittedAt": "2023-04-05T10:15:00",
+      "answers": [
+        {
+          "questionId": 1,
+          "answer": "H2O",
+          "score": 5
+        },
+        {
+          "questionId": 2,
+          "answer": "The pH scale is a logarithmic scale used to specify the acidity or basicity of an aqueous solution. It ranges from 0 to 14, with 7 being neutral.",
+          "score": 5
+        },
+        {
+          "questionId": 3,
+          "answer": "Electrolysis is a technique that uses direct electric current to drive an otherwise non-spontaneous chemical reaction. It involves the separation of elements or compounds by passing an electric current through them.",
+          "score": 10
+        }
+      ]
+    }
+  ]
+}
